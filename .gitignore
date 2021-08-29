@@ -2,3 +2,5 @@
 node_modules/
 yarn.lock
 playland-build/
+.DS_Store
+yarn.lock
