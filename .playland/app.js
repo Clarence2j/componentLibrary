@@ -12,11 +12,9 @@ const pageRequire = require.context('../examples/', true, /Example\.(js|tsx)$/)
 const pages = pageRequire.keys()
 const mdRequire = require.context('../src/', true, /\.md$/)
 const mds = mdRequire.keys()
-console.log(mds, pageRequire)
 
 const routes = pages.map(page => {
   const Example = pageRequire(page).default
-  console.log(Example)
   const name = page.replace(/(^\.\/)|(Example\.(js|tsx)$)/g, '')
   const mdName = `./${name}/${name.split('/').slice(-1)}.md`
   const overview = mds.includes(mdName) ? mdRequire(mdName) : ''
