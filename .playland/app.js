@@ -23,22 +23,16 @@ const routes = pages.map(page => {
     name,
     path: `/${name}`,
     component: () => (
-      <div className="KfeCollection-Example">
+      <div>
         <section>
           <Markdown text={overview} />
         </section>
         <section>
           <h1>示例</h1>
-          <span className="light" onClick={() => onThemeChange('light')}>
-            日间
-          </span>
-          <span className="dark" onClick={() => onThemeChange('dark')}>
-            夜间
-          </span>
+          <span>balabala</span>
           <Example />
         </section>
       </div>
-
     ),
   }
 })
