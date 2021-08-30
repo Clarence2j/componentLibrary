@@ -1,18 +1,4 @@
-.KfeCollection-Example {
-  .light,
-  .dark {
-    padding: 0 10px;
-    cursor: pointer;
-  }
-  .light {
-    background-color: #eee;
-    color: #000;
-  }
-  .dark {
-    background-color: #000;
-    color: #eee;
-  }
-}
+
 
 a {
   text-decoration: none;
